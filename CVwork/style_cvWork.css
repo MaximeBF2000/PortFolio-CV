@@ -1,0 +1,220 @@
+body{
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+html {
+scroll-behavior: smooth;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+}
+.sideNavbar{
+  width: 20%;
+  height: 580px;/* A changer ?*/
+  background-color: #0a2352;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: monospace,inherit,sans-serif ;
+  position: fixed;
+}
+.navbarProperty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainInfoLink>.idPhoto{
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-image: url("https://news.virginia.edu/sites/default/files/styles/uva_basic_article/public/article_image/Lukens.jpg?itok=3HFoo4ua");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -10px;
+}
+.basicInfo{
+  text-align: center;
+}
+.basicInfo>h2{
+  margin-bottom: 3px;
+}
+.basicInfo>h3{
+  margin-top: 3px;
+}
+.mainInfoLink{
+  text-decoration: none;
+  color: white;
+}
+.sommaire{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 100%;
+}
+.sommaireBtn{
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.sommaireBtn:hover{
+  background-color: white;
+  color: black;
+
+}
+.content{
+  width: 80%;
+  height: 100%; /* A changer ?*/
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  left: 20%;
+}
+.content_component{
+  width: 100%;
+  height: 580px;
+}
+.content_title{
+  font-size: 40px;
+  /*border: solid 1px black;*/
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  width: 80%;
+  border-bottom: solid 3px#0a2352;
+}
+.interior_component{
+  padding: 40px;
+}
+.customBold{
+  font-weight: bold;
+}
+.AlignementHorizontal{
+  display: flex;
+}
+.photoFacebook{
+  width: 200px;
+  height: 400px;
+  background-image: url("https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/37274267_1986452735001366_4587280695696556032_n.jpg?_nc_cat=106&_nc_ht=scontent-cdt1-1.xx&oh=d0e026f053933c6486db476f27a5b54c&oe=5C669F69");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
+  margin-right: 20px;
+}
+#content_MonParcours{
+  background-image: url("http://daxueconseil.fr/wp-content/uploads/2012/05/Daxue-Conseil-%C3%A9tude-de-march%C3%A9-en-Chine.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+#title_monParcours{
+  color: white;
+  border-bottom: solid 3px white;
+  font-weight: bold;
+}
+.long_text{
+  margin: 0px;
+  padding: 0px;
+}
+.parcoursTexte_background{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 75%;
+  background-color: rgba(128, 128, 128, 0.6);
+  border-radius: 10%;
+}
+.parcoursTexte_title{
+  border-bottom: solid 1px white;
+  padding-bottom: 3px;
+}
+.parcoursTexte_title >h3{
+  margin: 0px;
+}
+.parcoursTexte_commentaire{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.parcoursWIP{
+  width: 90%;
+  height: 50px;
+  border: solid 1px white;
+  padding: 19px;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: rgba(168, 168, 99, 0.6);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+#content_MesCompetences{
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/19/22/10/tool-2766835_960_720.jpg");
+  background-size: cover;
+}
+#content_MesPassions{
+  background-image: url("https://images.unsplash.com/photo-1531817134265-defb279fc8f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+}
+.AlignementCentral{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#content_MeContacter{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGVTxFRvautoRy_eWcNOFFb9otoYY8M-UKw4wpui1bJKc-98yv");
+  background-size: cover;
+}
+.formulaire{
+  width: 90%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.customInput{
+  border-radius: 10px;
+  margin: 5px;
+  height: 25px;
+  border: solid 1px grey;
+}
+.customTextarea{
+  border-radius: 10px;
+  margin: 5px;
+  width: 82%;
+}
+::placeholder{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.F_nomPrenom{
+  width: 82%;
+}
+#F_nom,#F_prenom{
+  width: 47%;
+}
+.F_mail{
+  width: 82%;
+}
+.F_btnEnvoyer{
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10px;
+}

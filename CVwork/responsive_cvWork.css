@@ -1,0 +1,33 @@
+@media screen and (max-width: 970px)
+{
+    .mainInfoLink>.idPhoto{
+      width: 56.25%;
+      height: 125px;
+      background-position: center;
+    }
+    .basicInfo>h2{
+      font-size: 20px;
+    }
+    .basicInfo>h3{
+      font-size: 18px;
+    }
+    .sommaire{
+      margin-top: 10px;
+    }
+    .sommaireBtn{
+      font-size: 15px;
+    }
+}
+@media screen and (max-width: 690px)
+{
+  .mainInfoLink>.idPhoto{
+    height: 0px;
+    width: 0px;
+  }
+  .content_component{
+    height: auto;
+  }
+  #parcoursTexte_backgroundAlignement{
+    flex-direction: column;
+  }
+}
