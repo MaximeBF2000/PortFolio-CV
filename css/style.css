@@ -1,0 +1,224 @@
+/* General settings*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Navbar */
+.navbarTrigger{
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    padding: 2px 5px;
+    background-color: rgb(14, 14, 136);
+    border-radius: 10px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -270px;
+    width: 270px;
+    height: 100vh;
+    background-color: rgb(8, 9, 10, 0.7);
+    transition: 0.3s ease;
+}
+.navbarShow{
+    left: 0;
+    z-index: 1;
+}
+.sommaire{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.btnSommaire{
+    color: white;
+    font-size: 25px;
+    padding: 15px 0 15px 0;
+    padding-left: 10px;
+}
+.btnSommaire:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+/* General presentation */
+header{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(14, 14, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#photoMain{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-image: url("https://media.licdn.com/dms/image/C5603AQGMQq7aThoCug/profile-displayphoto-shrink_200_200/0?e=1555545600&v=beta&t=xdMrWkJpzVrWWtqIKzguUZ8vacObsLeRrcFMwDeSXz4");
+    background-size: cover;
+}
+h2{
+    margin: 15px 0 5px 0;
+}
+h3{
+    margin: 10px 0 5px 0;
+}
+.socialHeader{
+    margin: 40px 0 0 0;
+    font-size: 30px;
+    opacity: 0.7;
+}
+.socialHeaderUnit{
+    margin: 0 3px 0 3px;
+    color: white;
+}
+
+/* General container settings*/
+.conteneur{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+.zoneWhite{
+    background-color: white;
+    color: black;
+}
+.zoneBlue{
+    background-color: rgb(14, 14, 136);
+    color: white;
+    border-color: white;
+}
+.zoneTitle{
+    width: 60%;
+    font-size: 35px;
+    border-bottom: solid 1px;
+    padding-bottom: 8px;
+    margin-bottom: 50px;
+}
+.rowZone{
+    margin-bottom: 60px;
+}
+.iconeZone{
+    display: flex;
+    font-size: 180px;
+    margin-right: 10px;
+    flex: 1;
+}
+.iconeBlue{
+    color: rgb(14, 14, 136);
+}
+.iconeWhite{
+    color: white;
+    font-size: 180px;
+}
+.icone_monParcours>.fas{
+    padding-right: 20px;
+}
+.textZone{
+    padding: 10px;
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+}
+.textZone p{
+    text-align: justify;
+}
+.title_zone{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Skills & statBar */
+.imgSkills{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.skills{
+    margin-top: 30px;
+}
+.statBarContainer{
+    width: 100%;
+    height: 40px;
+    margin: 20px 1px;
+    background-color: rgb(160, 153, 153);
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statBarStat{
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.statBarInfo{
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+.sliderBtn{
+    width: 80px;
+    height: 80px;
+    margin: 20px 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(14, 14, 136);
+    font-size: xx-large;
+    cursor: pointer;
+}
+.slider{
+    width: 900px;
+    height: 400px;
+    margin: 0 50px;
+    border: solid 2px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.slides{
+    width: calc(900px*3);
+    height: 400px;
+    display: flex;
+    position: absolute;
+    transition: 1s ease;
+    left: 0;
+}
+.slide{
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+    color: black;
+    display: block;
+}
+.slide>strong{
+    margin: 10px 10px;
+    padding-bottom: 2px;
+    border-bottom: solid 1px;
+}
+.formulaire{
+    width: 60%;
+    height: 500px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+}
+.form_nameLastname{
+    flex: 1;
+    display: flex;
+}
