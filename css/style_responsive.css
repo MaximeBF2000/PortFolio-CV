@@ -1,0 +1,92 @@
+/* Responsive 800px / tablette */
+
+@media (max-width: 800px){
+
+    /* General */
+    .title_zone{
+        text-align: center;
+    }
+
+    /* Mon parcours */
+    #monParcours .row{
+        flex-direction: column;
+    }
+    #monParcours .iconeZone{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    /* Mon caractère */
+    #monCaractere .rowFull{
+        flex-direction: column;
+    }
+    #monCaractere .iconeZone{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #monCaractere .textZone{
+        margin-bottom: 60px;
+    }
+
+
+    /* Mes commpétences */
+    #mesCompetences .imgSkillsParent{
+        display: none;
+    }
+
+    /* Mes projets */
+    #mesProjets .slider{
+        width: 500px;
+        height: 350px;
+    }
+    #mesProjets .sliderBtn{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Me contacter */
+    #meContacter form>input{
+        width: 75%;
+    }
+    #meContacter form>textarea{
+        width: 100%;
+    }
+    #meContacter #sendFormBtn{
+        width: 75%;
+    }
+
+}
+
+
+/* Responsive 400px / smartphone */
+
+@media (max-width: 400px){
+
+    /* General */
+    .zoneTitle{
+        width: 100%;
+        text-align: center;
+        border: 0;
+        font-weight: bold;
+    }
+    p{
+        display: none;
+    }
+    .textZone{
+        margin: 10px;
+    }
+
+    /* Mes projets*/
+    #mesProjets .slider{
+        width: 200%;
+        height: 400px;
+    }
+
+    /* Me contacter */
+    #meContacter form>input,#meContacter form>textarea{
+        width: 200%;
+    }
+}

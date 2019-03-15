@@ -16,6 +16,8 @@ Nous étudierons dans l'ordre de découverte :
 
 ### 5ème étape: Optimisation du code: Application des principes de SEO
 
-### 6ème étape: La création et organisation d'une Base de Données avec SQL
+### 6ème étape: Préparation d'une base de données avec un schéma Merise
 
-### 7ème étape: La manipulation des données avec PHP
+### 7ème étape: La création et organisation d'une Base de Données avec SQL
+
+### 8ème étape: La manipulation des données avec PHP
