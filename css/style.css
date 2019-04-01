@@ -20,6 +20,7 @@ body{
     padding: 2px 5px;
     background-color: var(--fontColor, rgb(14, 14, 136));
     border-radius: 10px;
+    z-index: 1;
 }
 .navbar{
     position: fixed;
