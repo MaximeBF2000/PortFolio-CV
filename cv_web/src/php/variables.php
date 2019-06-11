@@ -6,7 +6,7 @@ require_once(__DIR__."/functions.php");
 # Home
 
 $me = [
-    "photoLink" => "/cv_web/public/imgBank/profil.jpg",
+    "photoLink" => "./imgBank/profil.jpg",
     "firstname" => "Maxime",
     "lastname" => "BOUNAAS-FERRET",
     "role" => "Developpeur - Ynov Lyon" //Javscript and PHP modif needed
@@ -93,8 +93,8 @@ $skills = [
     [
         ["name" => "HTML / CSS", "masteryLevel" => 85, "bgColor" => "rgb(36, 36, 221)"],
         ["name" => "JAVASCRIPT", "masteryLevel" => 55, "bgColor" => "rgb(233, 233, 23)"],
-        ["name" => "PHP", "masteryLevel" => 35, "bgColor" => "rgb(68, 0, 68)"],
-        ["name" => "SQL", "masteryLevel" => 25, "bgColor" => "skyblue"]
+        ["name" => "PHP", "masteryLevel" => 45, "bgColor" => "rgb(68, 0, 68)"],
+        ["name" => "SQL", "masteryLevel" => 30, "bgColor" => "skyblue"]
     ],
     [
         ["name" => "Communication", "masteryLevel" => 75, "bgColor" => "rgb(201, 58, 58)"],
@@ -106,13 +106,49 @@ $skills = [
 
 $skillCategories = [
     [
-        "imgLink" => "/cv_web/public/imgBank/skill01_ligneDeCode.jpg",
+        "imgLink" => "./imgBank/skill01_ligneDeCode.jpg",
         "title" => "Développement Web",
         "skills" => $skills[0]
     ],
     [
-        "imgLink" => "/cv_web/public/imgBank/skill02_teamwork.jpg",
+        "imgLink" => "./imgBank/skill03_teamwork.jpg",
         "title" => "Divers",
         "skills" => $skills[1]
+    ],
+];
+
+
+# Project slider
+
+$projects = [
+    [
+        "title" => "Foodtrucks Online",
+        "bgColor" => "rgb(92, 214, 92)",
+        "textContent" => 
+        "
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ipsa, nam nostrum expedita qui cumque fugiat numquam fuga asperiores in unde. Voluptas, eos quas autem incidunt odio velit! Nihil, est.
+        Odio earum inventore incidunt dolorum quod eius, esse voluptate quae consequuntur sed libero delectus odit placeat nesciunt laborum quisquam unde blanditiis laboriosam repellendus! Sint dolores alias minima, magnam eveniet laborum?
+        Facilis, mollitia vero. Ratione fugit cum eum quo ut maxime, necessitatibus sint. Aspernatur reprehenderit quas deserunt quo commodi nesciunt voluptatem, eligendi ipsa quod a sint. Sunt asperiores quidem at omnis.
+        "
+    ],
+    [
+        "title" => "Site vitrine pour commerce de Vin",
+        "bgColor" => "rgb(109, 15, 109)",
+        "textContent" => 
+        "
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ipsa, nam nostrum expedita qui cumque fugiat numquam fuga asperiores in unde. Voluptas, eos quas autem incidunt odio velit! Nihil, est.
+        Odio earum inventore incidunt dolorum quod eius, esse voluptate quae consequuntur sed libero delectus odit placeat nesciunt laborum quisquam unde blanditiis laboriosam repellendus! Sint dolores alias minima, magnam eveniet laborum?
+        Facilis, mollitia vero. Ratione fugit cum eum quo ut maxime, necessitatibus sint. Aspernatur reprehenderit quas deserunt quo commodi nesciunt voluptatem, eligendi ipsa quod a sint. Sunt asperiores quidem at omnis.
+        "
+    ],
+    [
+        "title" => "Todo List",
+        "bgColor" => "skyblue",
+        "textContent" => 
+        "
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ipsa, nam nostrum expedita qui cumque fugiat numquam fuga asperiores in unde. Voluptas, eos quas autem incidunt odio velit! Nihil, est.
+        Odio earum inventore incidunt dolorum quod eius, esse voluptate quae consequuntur sed libero delectus odit placeat nesciunt laborum quisquam unde blanditiis laboriosam repellendus! Sint dolores alias minima, magnam eveniet laborum?
+        Facilis, mollitia vero. Ratione fugit cum eum quo ut maxime, necessitatibus sint. Aspernatur reprehenderit quas deserunt quo commodi nesciunt voluptatem, eligendi ipsa quod a sint. Sunt asperiores quidem at omnis. 
+        "
     ],
 ];

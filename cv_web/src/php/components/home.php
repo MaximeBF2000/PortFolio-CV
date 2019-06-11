@@ -13,9 +13,10 @@ require_once(__DIR__."/../variables.php");
             <a href="#mesCompetences" class="btnSommaire">Mes compétences</a>
             <a href="#mesProjets" class="btnSommaire">Mes projets</a>
             <a href="#meContacter" class="btnSommaire">Me contacter</a>
+            <a href="./downloadable/CVnormal.pdf" class="btnSommaire" id="downloadCV" download>Télécharger CV</a>
         </div>
     </div>
-    <img id="photoMain" src="<?php $me["photoLink"] ?>" alt="profil_IMG" />
+    <img id="photoMain" src="<?= $me["photoLink"] ?>" alt="profil_IMG" />
     <h2><?= $me["firstname"]." ".$me["lastname"] ?></h2>
     <div class="row">
         <h3 id="roleMain_invisible">x</h3>

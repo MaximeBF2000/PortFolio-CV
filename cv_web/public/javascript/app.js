@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    //Navbar dynamique
+    /* ---------------------------- Navbar Dynamique ---------------------------- */
 
     const d = document;
     let navbarShowBool = 0;
@@ -25,7 +25,8 @@ window.onload = function(){
         }    
     }
 
-    //Ecriture automatique role
+
+    /* ---------------------------- Ecriture automatique (rôle) ---------------------------- */
 
     const roleMain = d.querySelector("h3#roleMain");
     const role_ecritureAutomatique = "Developper - Ynov Lyon"; //PHP export needed
@@ -53,7 +54,7 @@ window.onload = function(){
     }, 80);
 
 
-    //Slider mesProjets
+    /* ---------------------------- Slider (#mesProjets) ---------------------------- */
 
     const slides = d.querySelector(".slides");
     const slideArray = d.querySelectorAll(".slide");
@@ -64,6 +65,8 @@ window.onload = function(){
     let positionNum = 1;
     let positionMax = 0;
 
+
+    d.documentElement.style.setProperty("--sliderWidth", slideWidth + "px"); // Set the width of the slider in the CSS
 
     slideArray.forEach((e) => {
         e.style.width = slideWidth + "px"; // Set the width of one slide
@@ -101,6 +104,6 @@ window.onload = function(){
     }
 
 
-    // setInterval(() =>{ slideRight(); }, 5000);
+    setInterval(() =>{ slideRight(); }, 5000);
 
 }

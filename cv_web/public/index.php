@@ -12,10 +12,10 @@ $pageTitle = "BF Maxime";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= $pageTitle ?></title>
     <meta lastname="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/style_responsive.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/CSS++.css"> <!--Librairie CSS personnelle-->
-    <link rel="stylesheet" href="css/fadeUpPerso.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style_responsive.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/CSS++.css"> <!--Librairie CSS personnelle-->
+    <link rel="stylesheet" href="./css/fadeUpPerso.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
@@ -43,7 +43,7 @@ $pageTitle = "BF Maxime";
         
     </footer>
 
-<script src="../public/javascript/app.js"></script>
-<script src="../public/javascript/fadeUpPerso.js"></script> <!-- Librairie fadeUp personnelle -->
+<script src="./javascript/app.js"></script>
+<script src="./javascript/fadeUpPerso.js"></script> <!-- Librairie fadeUp personnelle -->
 </body>
 </html>

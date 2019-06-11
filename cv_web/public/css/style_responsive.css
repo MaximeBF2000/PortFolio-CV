@@ -59,29 +59,50 @@
 
 /* Responsive SLIDER */
 @media(max-width: 850px){
+    :root{
+        --sliderWidth: 500px;
+    }
     #mesProjets .slider{
-        width: 500px;
+        width: var(--sliderWidth);
         height: 350px;
     }
 }
 
 @media (max-width: 650px){
+    :root{
+        --sliderWidth: 400px;
+    }
     #mesProjets .slider{
-        width: 400px;
+        width: var(--sliderWidth);
         height: 250px;
     }
 }
 
 @media (max-width: 500px){
+    :root{
+        --sliderWidth: 300px;
+    }
     #mesProjets .slider{
-        width: 300px;
+        width: var(--sliderWidth);
+        height: 200px;
+    }
+}
+@media (max-width: 400px){
+    :root{
+        --sliderWidth: 250px;
+    }
+    #mesProjets .slider{
+        width: var(--sliderWidth);
         height: 200px;
     }
 }
 
 @media (max-width: 300px){
+    :root{
+        --sliderWidth: 150px;
+    }
     #mesProjets .slider{
-        width: 100%;
+        width: var(--sliderWidth);
         height: 70px;
     }
     #mesProjets .row{
