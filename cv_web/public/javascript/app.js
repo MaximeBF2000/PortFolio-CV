@@ -1,8 +1,12 @@
 window.onload = function(){
 
+    const d = document;
+    function log(x){
+        console.log(x);
+    }
+
     /* ---------------------------- Navbar Dynamique ---------------------------- */
 
-    const d = document;
     let navbarShowBool = 0;
 
 
@@ -35,7 +39,7 @@ window.onload = function(){
 
 
     setInterval(() => {
-        if(role_sensEcritureAutomatique === true){
+        if(role_sensEcritureAutomatique === true){ // Ecrit le texte
             role_indexEcritureAutomatique += 1;
             roleMain.textContent = role_ecritureAutomatique.slice(0, role_indexEcritureAutomatique);
             if(role_indexEcritureAutomatique === role_ecritureAutomatique.length){
@@ -44,7 +48,7 @@ window.onload = function(){
                 }, 2000);
             }
         }
-        else{
+        else{ // Efface le texte
             role_indexEcritureAutomatique -= 1;
             roleMain.textContent = role_ecritureAutomatique.slice(0, role_indexEcritureAutomatique);
             if(role_indexEcritureAutomatique === 0){
@@ -78,7 +82,8 @@ window.onload = function(){
     sliderBtnR.addEventListener("click", slideRight);
 
 
-    function slideLeft(){
+    function slideLeft()
+    {
         if(positionNum !== 1){
            positionPx = positionPx + slideWidth;
            slides.style.left = positionPx + "px";
@@ -90,7 +95,8 @@ window.onload = function(){
             positionNum = positionMax;
         }
     }
-    function slideRight(){
+    function slideRight()
+    {
         if(positionNum !== positionMax){
             positionPx = positionPx - slideWidth;
             slides.style.left = positionPx + "px";
@@ -103,7 +109,39 @@ window.onload = function(){
         }
     }
 
+    /* ----------------------------- Verification contact_form ---------------------------- */
 
-    setInterval(() =>{ slideRight(); }, 5000);
+    inputMail = d.querySelector("form>#mail");
+    inputLastname = d.querySelector("form>#nom");
+    inputFirstname = d.querySelector("form>#prenom");
+    submitBtn = d.querySelector("form>#sendFormBtn");
+
+    submitBtn.addEventListener("click", formCheck);
+    
+    function formCheck()
+    {
+        inputMailContent = inputMail.value;
+        inputLastnameContent = inputLastname.value;
+        inputFirstnameContent = inputFirstname.value;
+        if(
+            inputMailContent.includes("@") // mail check
+            && inputMailContent.includes(".")
+            && inputFirstnameContent.length > 0
+            && inputLastnameContent.length > 0
+            ){
+            d.forms["formulaire"].submit();
+        } else { // Error message
+            if(inputLastnameContent.length === 0){
+                d.querySelector("form>#nomCheck").innerHTML = "<p style='color: red; margin: 5px 0'> Veuillez renseigner ce champs </p>";
+            }
+            if(inputFirstnameContent.length === 0){
+                d.querySelector("form>#prenomCheck").innerHTML = "<p style='color: red; margin: 5px 0'> Veuillez renseigner ce champs </p>";
+            }
+            if(!inputMailContent.includes(".") || !inputMailContent.includes("@")){
+                d.querySelector("form>#mailCheck").innerHTML = "<p style='color: red; margin: 5px 0'> Veuillez renseigner un mail valide </p>";
+            }
+        }
+    }
+
 
 }

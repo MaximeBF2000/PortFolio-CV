@@ -1,0 +1,14 @@
+{
+    "name": "maxime/cvwebscolaire",
+    "description": "desc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Maxime BOUNAAS-FERRET",
+            "email": "maxime.bounaas@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.2"
+    }
+}

@@ -1,7 +1,8 @@
 <?php
 
-require_once(__DIR__."/../src/php/functions.php");
-require_once(__DIR__."/../src/php/variables.php");
+require_once(__DIR__."/../src/database_co.php");
+require_once(__DIR__."/../src/functions.php");
+require_once(__DIR__."/../src/variables.php");
 $pageTitle = "BF Maxime";
 
 ?>
@@ -21,22 +22,22 @@ $pageTitle = "BF Maxime";
 </head>
 <body>
     <!-- Home -->
-    <?php require_once("../src/php/components/home.php"); ?>
+    <?php require_once("../src/components/home.php"); ?>
 
     <!-- Mon Parcours -->
-    <?php require_once("../src/php/components/parcours.php"); ?>
+    <?php require_once("../src/components/parcours.php"); ?>
 
     <!-- Mon Caractère -->
-    <?php require_once("../src/php/components/caractere.php"); ?>
+    <?php require_once("../src/components/caractere.php"); ?>
 
     <!-- Mes compétences -->
-    <?php require_once("../src/php/components/skills.php"); ?>
+    <?php require_once("../src/components/skills.php"); ?>
 
     <!-- Mes projets -->
-    <?php require_once("../src/php/components/project.php"); ?>
+    <?php require_once("../src/components/project.php"); ?>
 
     <!-- Me contacter -->
-    <?php require_once("../src/php/components/contact.php"); ?>
+    <?php require_once("../src/components/contact.php"); ?>
 
     <!-- Footer -->
     <footer>
