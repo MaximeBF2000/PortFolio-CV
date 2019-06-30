@@ -13,7 +13,7 @@ Pour la création de notre site, il nous faut une organisation bien définie de 
 -	Ajout du dynamisme sur le site avec PHP et SQL
 -	Création d’une partie admin en PHP
 
-## Cependant, étant dans le cadre d’une formation, l’organisation que j’ai utilisé pour la création de ce cv est légèrement différentes du aux contraintes de planning de l’apprentissage ainsi que des difficultés que j’ai rencontrées, ci-dessous sera donc présenté cette organisation.
+Cependant, étant dans le cadre d’une formation, l’organisation que j’ai utilisé pour la création de ce cv est légèrement différentes du aux contraintes de planning de l’apprentissage ainsi que des difficultés que j’ai rencontrées, ci-dessous sera donc présenté cette organisation.
 -	Création d’un site statique en HTML (modèle 1)
 -	Ajout de modules en javascript
 -	Création du schéma Merise
