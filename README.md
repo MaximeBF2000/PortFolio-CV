@@ -24,6 +24,10 @@ Cependant, étant dans le cadre d’une formation, l’organisation que j’ai u
 -	Ajout du dynamisme en PHP
 -	Création d’une section admin en PHP
 
+Le schéma merise :
+
+![Image of the merise schema](./merise.png)
+
 ## Frontend : Ergonomie et expérience utilisateur
 
 Le CV est composé essentiellement d’une couleur primaire et d’une couleur secondaire.

@@ -1,3 +1,5 @@
+--Old CV database : updated version directly created on phpmyadmin
+
 -- Drop tables
 
 DROP TABLE IF EXISTS CV;
